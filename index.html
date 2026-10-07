@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awais Arshad | AI Researcher & Data Scientist</title>
+  <meta name="description" content="Portfolio of Awais Arshad - AI Researcher & Data Science Graduate from NUCES-FAST. Author of research in Federated Learning Security and Multilingual LLM Text Detection." />
+  <meta name="keywords" content="Awais Arshad, Data Scientist, AI Researcher, Federated Learning, Multimodal AI, Agentic AI, Deep Learning, PyTorch, NUCES-FAST" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="cyber-theme">
+  <!-- Interactive Particle Background -->
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Awais Arshad Home">
+        <span class="logo-bracket">&lt;</span><span class="logo-text">Awais</span><span class="logo-dot">.</span><span class="logo-accent">AI</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="about.html" class="nav-item">About</a>
+        <a href="research.html" class="nav-item">Research</a>
+        <a href="skills.html" class="nav-item">Skills</a>
+        <a href="projects.html" class="nav-item">Projects</a>
+        <a href="experience.html" class="nav-item">Experience</a>
+        <a href="achievements.html" class="nav-item">Achievements</a>
+        <a href="education.html" class="nav-item">Education</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="Awais_Arshad_Reseach_Cv.pdf" class="btn btn-outline btn-sm" target="_blank" download="Awais_Arshad_Reseach_Cv.pdf">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Research CV</span>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-ping"></span>
+            <span class="status-text">Available for Data Science & AI Research Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text glow">Awais Arshad</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <span class="terminal-prefix">&gt; </span>
+            <span id="typed-roles" class="typed-roles">AI Researcher & Data Scientist</span>
+            <span class="cursor-blink">|</span>
+          </div>
+
+          <p class="hero-description">
+            Data Science researcher from <strong>NUCES-FAST Islamabad</strong> specializing in 
+            <strong>Deep Learning</strong>, <strong>Agentic AI</strong>, <strong>Federated Learning Security</strong>, 
+            and <strong>Multimodal Systems</strong>. Co-author of 2 research publications under peer review, 
+            with 6 months of corporate data science internship experience.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="projects.html" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="research.html" class="btn btn-secondary">
+              <span>View Research</span>
+            </a>
+            <a href="Awais_Arshad_Reseach_Cv.pdf" class="btn btn-glass" target="_blank" download="Awais_Arshad_Reseach_Cv.pdf">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              <span>Download CV</span>
+            </a>
+          </div>
+
+          <!-- Social Quick Bar -->
+          <div class="social-bar">
+            <a href="https://github.com/AwaisArshad1989" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/awais-arshad-739969322/?isSelfProfile=true/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="mailto:awaisarshad3839@gmail.com" class="social-link" title="Email Awais">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+            <a href="tel:+923051038188" class="social-link" title="Call Awais">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Portrait with Cyber Frame -->
+        <div class="hero-image-wrapper">
+          <div class="avatar-glow-ring">
+            <div class="avatar-inner">
+              <img src="Awais.png" alt="Awais Arshad - AI Researcher & Data Scientist" class="hero-avatar" />
+            </div>
+            <div class="orbit-badge orbit-top">
+              <span class="orbit-icon">🔬</span>
+              <span>2 Papers Under Review</span>
+            </div>
+            <div class="orbit-badge orbit-bottom">
+              <span class="orbit-icon">⚡</span>
+              <span>NUCES-FAST AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Stats Metric Strip -->
+    <section class="stats-strip">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">2</div>
+          <div class="stat-label">Research Papers Under Review</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">FAST</div>
+          <div class="stat-label">BS Data Science (2022–2026)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">6 Mo</div>
+          <div class="stat-label">Data Scientist at WorkDesk VA</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">5+</div>
+          <div class="stat-label">Production AI & ML Systems</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Nav Portal Cards Section -->
+    <section class="section portal-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">// PORTFOLIO DIRECTORY</span>
+          <h2 class="section-title">Explore by Domain</h2>
+          <div class="title-bar center-bar"></div>
+          <p class="section-subtitle">Click below to open any section in its dedicated page.</p>
+        </div>
+
+        <div class="portal-grid">
+          <!-- Card 1: About -->
+          <a href="about.html" class="portal-card glass-panel">
+            <div class="portal-icon">👤</div>
+            <div class="portal-info">
+              <span class="portal-tag">01. Background</span>
+              <h3 class="portal-title">About Me</h3>
+              <p class="portal-desc">Overview of engineering philosophy, professional strengths, and core technical competencies.</p>
+            </div>
+            <span class="portal-arrow">→</span>
+          </a>
+
+          <!-- Card 2: Research -->
+          <a href="research.html" class="portal-card glass-panel">
+            <div class="portal-icon">🔬</div>
+            <div class="portal-info">
+              <span class="portal-tag">02. Scholarly</span>
+              <h3 class="portal-title">Research Papers</h3>
+              <p class="portal-desc">MultiSocial++ and HDA-ATS Federated Learning defense papers under peer review.</p>
+            </div>
+            <span class="portal-arrow">→</span>
+          </a>
+
+          <!-- Card 3: Skills -->
+          <a href="skills.html" class="portal-card glass-panel">
+            <div class="portal-icon">⚡</div>
+            <div class="portal-info">
+              <span class="portal-tag">03. Stack</span>
+              <h3 class="portal-title">Technical Skills</h3>
+              <p class="portal-desc">PyTorch, TensorFlow, Scikit-learn, Agentic AI, Cloud (AWS/Azure), and languages.</p>
+            </div>
+            <span class="portal-arrow">→</span>
+          </a>
+
+          <!-- Card 4: Projects -->
+          <a href="projects.html" class="portal-card glass-panel">
+            <div class="portal-icon">🚀</div>
+            <div class="portal-info">
+              <span class="portal-tag">04. Engineering</span>
+              <h3 class="portal-title">Featured Projects</h3>
+              <p class="portal-desc">PitchDeck FYP, LLM Multi-Agent System, House Price Prediction, and POS systems.</p>
+            </div>
+            <span class="portal-arrow">→</span>
+          </a>
+
+          <!-- Card 5: Experience -->
+          <a href="experience.html" class="portal-card glass-panel">
+            <div class="portal-icon">💼</div>
+            <div class="portal-info">
+              <span class="portal-tag">05. Corporate</span>
+              <h3 class="portal-title">Work Experience</h3>
+              <p class="portal-desc">6-month corporate data science internship at WorkDesk VA Lahore, Pakistan.</p>
+            </div>
+            <span class="portal-arrow">→</span>
+          </a>
+
+          <!-- Card 6: Achievements -->
+          <a href="achievements.html" class="portal-card glass-panel">
+            <div class="portal-icon">🏆</div>
+            <div class="portal-info">
+              <span class="portal-tag">06. Distinctions</span>
+              <h3 class="portal-title">Achievements</h3>
+              <p class="portal-desc">Merit scholarships, IEEE-WIE workshop leadership, and competition accolades.</p>
+            </div>
+            <span class="portal-arrow">→</span>
+          </a>
+
+          <!-- Card 7: Education -->
+          <a href="education.html" class="portal-card glass-panel">
+            <div class="portal-icon">🎓</div>
+            <div class="portal-info">
+              <span class="portal-tag">07. Academic</span>
+              <h3 class="portal-title">Education & References</h3>
+              <p class="portal-desc">NUCES-FAST Islamabad, Cadet College Wana, and academic faculty references.</p>
+            </div>
+            <span class="portal-arrow">→</span>
+          </a>
+
+          <!-- Card 8: Contact -->
+          <a href="contact.html" class="portal-card glass-panel">
+            <div class="portal-icon">📬</div>
+            <div class="portal-info">
+              <span class="portal-tag">08. Connect</span>
+              <h3 class="portal-title">Get In Touch</h3>
+              <p class="portal-desc">Direct email, phone, LinkedIn, GitHub, and pre-formatted dispatch message form.</p>
+            </div>
+            <span class="portal-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-logo">&lt;Awais.AI/&gt;</span>
+        <p>© 2026 Awais Arshad. AI Researcher & Data Scientist (NUCES-FAST Islamabad).</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

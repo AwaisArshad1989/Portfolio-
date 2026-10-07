@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Featured Projects & Video Demos | Awais Arshad - AI Researcher & Data Scientist</title>
+  <meta name="description" content="Explore AI and Machine Learning engineering projects by Awais Arshad with interactive video demos, system architectures, and technical specifications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="cyber-theme">
+  <!-- Interactive Particle Background -->
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Awais Arshad Home">
+        <span class="logo-bracket">&lt;</span><span class="logo-text">Awais</span><span class="logo-dot">.</span><span class="logo-accent">AI</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="about.html" class="nav-item">About</a>
+        <a href="research.html" class="nav-item">Research</a>
+        <a href="skills.html" class="nav-item">Skills</a>
+        <a href="projects.html" class="nav-item active">Projects</a>
+        <a href="experience.html" class="nav-item">Experience</a>
+        <a href="achievements.html" class="nav-item">Achievements</a>
+        <a href="education.html" class="nav-item">Education</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="Awais_Arshad_Reseach_Cv.pdf" class="btn btn-outline btn-sm" target="_blank" download="Awais_Arshad_Reseach_Cv.pdf">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Research CV</span>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> <span class="bc-sep">/</span> <span class="bc-current">Projects</span>
+        </div>
+        <span class="section-tag">// 04. ENGINEERING & DEMOS</span>
+        <h1 class="page-title">Featured Projects & Video Demos</h1>
+        <div class="title-bar"></div>
+        <p class="page-subtitle">Production-grade AI systems with integrated video demonstration players, system architecture diagrams, and technical deep dives.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="projects-showcase-list">
+
+          <!-- PROJECT 1: PitchDeck -->
+          <article class="project-showcase-panel glass-panel" id="project-pitchdeck">
+            <div class="showcase-header">
+              <div>
+                <span class="project-category">Multimodal AI Platform</span>
+                <h2 class="showcase-title">PitchDeck – Multimodal AI Pitch Coaching System</h2>
+              </div>
+              <span class="card-badge featured-badge">Final Year Project (FYP)</span>
+            </div>
+
+            <div class="showcase-grid">
+              <!-- Left Column: Video Demo & Uploader -->
+              <div class="project-demo-hub">
+                <div class="demo-player-wrapper">
+                  <video id="video-pitchdeck" class="demo-video" controls playsinline preload="metadata">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="video-placeholder" id="placeholder-pitchdeck">
+                    <div class="play-icon-glow">
+                      <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                      </svg>
+                    </div>
+                    <span class="placeholder-text">Video Demo Ready</span>
+                    <span class="placeholder-sub">Click below to upload or select a demo video</span>
+                  </div>
+                </div>
+
+                <!-- Video Upload Controls -->
+                <div class="video-upload-area" id="dropzone-pitchdeck" data-target="pitchdeck">
+                  <input type="file" id="file-pitchdeck" class="video-file-input" accept="video/mp4,video/webm,video/ogg,video/quicktime" data-target="pitchdeck" />
+                  <div class="upload-controls-content">
+                    <label for="file-pitchdeck" class="btn btn-primary btn-sm upload-btn">
+                      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                      </svg>
+                      <span>Upload Demo Video</span>
+                    </label>
+                    <span class="drop-hint">or drag & drop your MP4/WebM video here</span>
+                  </div>
+                  <div class="loaded-file-indicator" id="status-pitchdeck"></div>
+                </div>
+              </div>
+
+              <!-- Right Column: Project Details -->
+              <div class="project-details-pane">
+                <h3 class="pane-heading">Project Overview</h3>
+                <p class="pane-text">
+                  PitchDeck is a full-stack multimodal AI coaching platform that evaluates startup pitches in real time. 
+                  By concurrently processing live video feeds and audio streams, PitchDeck delivers fine-grained, quantitative feedback 
+                  on body language, eye contact consistency, speech fluency, vocal cadence, and argument conviction.
+                </p>
+
+                <h3 class="pane-heading">System Architecture</h3>
+                <pre class="architecture-diagram">[ User Video Stream ] ──> MediaPipe Vision Pipeline ──> Gaze & Posture Metrics ──┐
+                                                                                 ▼
+[ User Audio Stream ] ──> Distil-Whisper ASR ────────> Speech Transcription ────> [ Groq LLM (Llama 3.3) ]
+                                                                                 │
+[ Real-Time React Dashboard ] <──────────────── Actionable Coaching Scores & Radar <──┘</pre>
+
+                <h3 class="pane-heading">Key Technical Features</h3>
+                <ul class="pane-checklist">
+                  <li><strong>Computer Vision Tracking:</strong> Employs Google MediaPipe for facial landmark estimation, head pose yaw/pitch tracking, and posture orientation.</li>
+                  <li><strong>Sub-Second ASR:</strong> Distil-Whisper integration achieves low-latency audio transcription and filler-word frequency detection.</li>
+                  <li><strong>Ultra-Fast LLM Reasoning:</strong> Groq-accelerated Llama 3.3 model provides instant semantic critique on delivery, persuasion, and clarity.</li>
+                  <li><strong>Interactive Dashboards:</strong> React-based radar charts, temporal eye-contact plots, and summary coaching reports.</li>
+                </ul>
+
+                <div class="pane-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">MediaPipe</span>
+                  <span class="tech-tag">Distil-Whisper</span>
+                  <span class="tech-tag">Groq API</span>
+                  <span class="tech-tag">Llama 3.3</span>
+                  <span class="tech-tag">WebSockets</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Multi-Agent System -->
+          <article class="project-showcase-panel glass-panel" id="project-multiagent">
+            <div class="showcase-header">
+              <div>
+                <span class="project-category">Autonomous LLM Architecture</span>
+                <h2 class="showcase-title">Autonomous Multi-Agent Scientific Experimentation System</h2>
+              </div>
+              <span class="card-badge ai-badge">Agentic AI</span>
+            </div>
+
+            <div class="showcase-grid">
+              <!-- Left Column: Video Demo & Uploader -->
+              <div class="project-demo-hub">
+                <div class="demo-player-wrapper">
+                  <video id="video-multiagent" class="demo-video" controls playsinline preload="metadata">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="video-placeholder" id="placeholder-multiagent">
+                    <div class="play-icon-glow">
+                      <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                      </svg>
+                    </div>
+                    <span class="placeholder-text">Video Demo Ready</span>
+                    <span class="placeholder-sub">Click below to upload or select a demo video</span>
+                  </div>
+                </div>
+
+                <div class="video-upload-area" id="dropzone-multiagent" data-target="multiagent">
+                  <input type="file" id="file-multiagent" class="video-file-input" accept="video/mp4,video/webm,video/ogg,video/quicktime" data-target="multiagent" />
+                  <div class="upload-controls-content">
+                    <label for="file-multiagent" class="btn btn-primary btn-sm upload-btn">
+                      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                      </svg>
+                      <span>Upload Demo Video</span>
+                    </label>
+                    <span class="drop-hint">or drag & drop your MP4/WebM video here</span>
+                  </div>
+                  <div class="loaded-file-indicator" id="status-multiagent"></div>
+                </div>
+              </div>
+
+              <!-- Right Column: Project Details -->
+              <div class="project-details-pane">
+                <h3 class="pane-heading">Project Overview</h3>
+                <p class="pane-text">
+                  An autonomous end-to-end multi-agent AI research framework designed to automate the scientific discovery process. 
+                  Collaborating agents formulate scientific hypotheses, write Python simulation and modeling code, run execution in sandboxed environments, 
+                  autonomously debug stack trace errors, and synthesize publication-style reports.
+                </p>
+
+                <h3 class="pane-heading">System Architecture</h3>
+                <pre class="architecture-diagram">[ Scientific Prompt ] ──> [ Lead Scientist Agent ] ──> Formulate Hypothesis
+                                    │
+                                    ▼
+                         [ Python Code Generator ] ──> Generate Scripts
+                                    │
+                                    ▼
+                         [ Isolated Sandbox Exec ]
+                                  │       │
+                      (On Error)  │       │  (On Success)
+                                  ▼       ▼
+                       [ Debugger ]     [ Verification Agent ] ──> Check Statistical Rigor
+                       (Self-Patch)               │
+                                                  ▼
+                                        [ Research Synthesis Agent ] ──> Scientific Paper</pre>
+
+                <h3 class="pane-heading">Key Technical Features</h3>
+                <ul class="pane-checklist">
+                  <li><strong>Agent Specialization:</strong> Role-delineated architecture with Lead Scientist, Code Generator, Execution Engine, Debugger, and Verifier.</li>
+                  <li><strong>Autonomous Self-Healing:</strong> Agents read runtime stack traces, hypothesize bugs, and iteratively patch code until successful execution.</li>
+                  <li><strong>Verification Rigor:</strong> Verification agents scrutinize p-values, sample distributions, and statistical validity to prevent hallucinated conclusions.</li>
+                  <li><strong>Ollama & Llama 3:</strong> Seamless support for local inference via Ollama and remote cloud endpoints.</li>
+                </ul>
+
+                <div class="pane-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Ollama</span>
+                  <span class="tech-tag">Llama 3</span>
+                  <span class="tech-tag">Agentic AI</span>
+                  <span class="tech-tag">Multi-Agent Systems</span>
+                  <span class="tech-tag">Automated Debugging</span>
+                  <span class="tech-tag">Sandbox Execution</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: House Price Prediction -->
+          <article class="project-showcase-panel glass-panel" id="project-houseprice">
+            <div class="showcase-header">
+              <div>
+                <span class="project-category">Full-Stack ML App</span>
+                <h2 class="showcase-title">House Price Prediction Web Application</h2>
+              </div>
+              <span class="card-badge ml-badge">Machine Learning</span>
+            </div>
+
+            <div class="showcase-grid">
+              <!-- Left Column: Video Demo & Uploader -->
+              <div class="project-demo-hub">
+                <div class="demo-player-wrapper">
+                  <video id="video-houseprice" class="demo-video" controls playsinline preload="metadata">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="video-placeholder" id="placeholder-houseprice">
+                    <div class="play-icon-glow">
+                      <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                      </svg>
+                    </div>
+                    <span class="placeholder-text">Video Demo Ready</span>
+                    <span class="placeholder-sub">Click below to upload or select a demo video</span>
+                  </div>
+                </div>
+
+                <div class="video-upload-area" id="dropzone-houseprice" data-target="houseprice">
+                  <input type="file" id="file-houseprice" class="video-file-input" accept="video/mp4,video/webm,video/ogg,video/quicktime" data-target="houseprice" />
+                  <div class="upload-controls-content">
+                    <label for="file-houseprice" class="btn btn-primary btn-sm upload-btn">
+                      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                      </svg>
+                      <span>Upload Demo Video</span>
+                    </label>
+                    <span class="drop-hint">or drag & drop your MP4/WebM video here</span>
+                  </div>
+                  <div class="loaded-file-indicator" id="status-houseprice"></div>
+                </div>
+              </div>
+
+              <!-- Right Column: Project Details -->
+              <div class="project-details-pane">
+                <h3 class="pane-heading">Project Overview</h3>
+                <p class="pane-text">
+                  A machine learning platform delivering real-time property appraisals. Implements a rigorous predictive modeling workflow: 
+                  automated outlier mitigation, multi-collinearity checks, high-signal feature transformations, and continuous cross-validation 
+                  served through a lightweight Flask REST API.
+                </p>
+
+                <h3 class="pane-heading">System Architecture</h3>
+                <pre class="architecture-diagram">[ Housing Raw Dataset ] ──> [ EDA & Outlier Removal ] ──> [ Feature Engineering Pipeline ]
+                                                                      │
+                                                                      ▼
+[ Web Frontend Client ] <──── [ Flask Prediction API ] <──── [ Scikit-learn Regressor ]</pre>
+
+                <h3 class="pane-heading">Key Technical Features</h3>
+                <ul class="pane-checklist">
+                  <li><strong>Comprehensive EDA:</strong> Correlation matrix analysis, skewness normalization, and IQR-based anomaly elimination.</li>
+                  <li><strong>Feature Engineering:</strong> Polynomial features, categorical target encoding, and standard scaling.</li>
+                  <li><strong>Model Validation:</strong> Comparative benchmarks across Linear Regression, Ridge, Lasso, and Tree models with k-fold cross-validation.</li>
+                  <li><strong>REST API Deployment:</strong> Sub-50ms inference latency via optimized Flask endpoints.</li>
+                </ul>
+
+                <div class="pane-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">Scikit-learn</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">NumPy</span>
+                  <span class="tech-tag">Feature Engineering</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Walmart Data Warehouse with OLAP Analytics -->
+          <article class="project-showcase-panel glass-panel" id="project-walmart-dwh">
+            <div class="showcase-header">
+              <div>
+                <span class="project-category">Data Engineering & Analytics</span>
+                <h2 class="showcase-title">Walmart Data Warehouse with OLAP Analytics</h2>
+              </div>
+              <span class="card-badge ds-badge">Data Warehouse / OLAP</span>
+            </div>
+
+            <div class="showcase-grid">
+              <!-- Left Column: Video Demo & Uploader -->
+              <div class="project-demo-hub">
+                <div class="demo-player-wrapper">
+                  <video id="video-walmart-dwh" class="demo-video" controls playsinline preload="metadata">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="video-placeholder" id="placeholder-walmart-dwh">
+                    <div class="play-icon-glow">
+                      <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                      </svg>
+                    </div>
+                    <span class="placeholder-text">Video Demo Ready</span>
+                    <span class="placeholder-sub">Click below to upload or select a demo video</span>
+                  </div>
+                </div>
+
+                <div class="video-upload-area" id="dropzone-walmart-dwh" data-target="walmart-dwh">
+                  <input type="file" id="file-walmart-dwh" class="video-file-input" accept="video/mp4,video/webm,video/ogg,video/quicktime" data-target="walmart-dwh" />
+                  <div class="upload-controls-content">
+                    <label for="file-walmart-dwh" class="btn btn-primary btn-sm upload-btn">
+                      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                      </svg>
+                      <span>Upload Demo Video</span>
+                    </label>
+                    <span class="drop-hint">or drag & drop your MP4/WebM video here</span>
+                  </div>
+                  <div class="loaded-file-indicator" id="status-walmart-dwh"></div>
+                </div>
+              </div>
+
+              <!-- Right Column: Project Details -->
+              <div class="project-details-pane">
+                <h3 class="pane-heading">Project Overview</h3>
+                <p class="pane-text">
+                  Built an end-to-end enterprise data warehouse using Python and MySQL, transforming raw retail data into a structured 
+                  Star Schema architecture. Engineered for high-performance analytical processing, enabling multi-dimensional intelligence 
+                  across revenue, sales velocity, customer spending behaviors, and supply chain timelines.
+                </p>
+
+                <h3 class="pane-heading">System Architecture</h3>
+                <pre class="architecture-diagram">[ Raw Retail Datasets ] ──> [ Python / Pandas ETL Engine ] ──> [ Data Cleaning & Validation ]
+                                                                             │
+                                                                             ▼
+[ 20 OLAP Queries Engine ] <── [ Star Schema: FactSales + 5 Dim Tables ] <── [ Hybrid Join Loader ]
+            │
+            ▼
+[ Executive BI Insights: Revenue Trends, Customer Spending, Margin Analysis ]</pre>
+
+                <h3 class="pane-heading">Key Technical Features</h3>
+                <ul class="pane-checklist">
+                  <li><strong>Star Schema Dimensional Modeling:</strong> Developed Fact and Dimension tables for customers, products, stores, suppliers, and temporal dates to optimize query throughput and minimize redundancy.</li>
+                  <li><strong>Automated ETL Pipeline:</strong> Built a robust data extraction, cleansing, and transformation pipeline using Pandas and MySQL to convert dirty raw retail datasets into clean relational records.</li>
+                  <li><strong>Hybrid Join-Based Loading:</strong> Implemented optimized Hybrid Join loading strategies ensuring high-speed bulk ingestion with complete referential integrity.</li>
+                  <li><strong>20 Complex OLAP Queries:</strong> Formulated 20 analytical queries (roll-up, drill-down, slice-and-dice) to extract actionable business insights on sales volumes, revenue trajectories, and customer spending habits.</li>
+                </ul>
+
+                <div class="pane-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">ETL Pipeline</span>
+                  <span class="tech-tag">Star Schema</span>
+                  <span class="tech-tag">OLAP Analytics</span>
+                  <span class="tech-tag">Data Warehousing</span>
+                  <span class="tech-tag">SQL Optimization</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: Cafe Management System -->
+          <article class="project-showcase-panel glass-panel" id="project-cafe">
+            <div class="showcase-header">
+              <div>
+                <span class="project-category">Software Engineering</span>
+                <h2 class="showcase-title">Cafe Management & POS System</h2>
+              </div>
+              <span class="card-badge oop-badge">OOP Systems</span>
+            </div>
+
+            <div class="showcase-grid">
+              <!-- Left Column: Video Demo & Uploader -->
+              <div class="project-demo-hub">
+                <div class="demo-player-wrapper">
+                  <video id="video-cafe" class="demo-video" controls playsinline preload="metadata">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="video-placeholder" id="placeholder-cafe">
+                    <div class="play-icon-glow">
+                      <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                      </svg>
+                    </div>
+                    <span class="placeholder-text">Video Demo Ready</span>
+                    <span class="placeholder-sub">Click below to upload or select a demo video</span>
+                  </div>
+                </div>
+
+                <div class="video-upload-area" id="dropzone-cafe" data-target="cafe">
+                  <input type="file" id="file-cafe" class="video-file-input" accept="video/mp4,video/webm,video/ogg,video/quicktime" data-target="cafe" />
+                  <div class="upload-controls-content">
+                    <label for="file-cafe" class="btn btn-primary btn-sm upload-btn">
+                      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                      </svg>
+                      <span>Upload Demo Video</span>
+                    </label>
+                    <span class="drop-hint">or drag & drop your MP4/WebM video here</span>
+                  </div>
+                  <div class="loaded-file-indicator" id="status-cafe"></div>
+                </div>
+              </div>
+
+              <!-- Right Column: Project Details -->
+              <div class="project-details-pane">
+                <h3 class="pane-heading">Project Overview</h3>
+                <p class="pane-text">
+                  An object-oriented software application built in C++ to manage cafe operations: automated order taking, itemized billing with taxation, 
+                  and real-time inventory management with persistent disk storage.
+                </p>
+
+                <h3 class="pane-heading">System Architecture</h3>
+                <pre class="architecture-diagram">[ POS Console ] ──> [ Order Engine ] ──> [ Tax & Billing Calculation ] ──> [ Printed Invoice ]
+                         │
+                         ▼
+             [ Inventory Tracking ] ──> [ File I/O Persistence Storage ]</pre>
+
+                <h3 class="pane-heading">Key Technical Features</h3>
+                <ul class="pane-checklist">
+                  <li><strong>Object-Oriented Design:</strong> Polymorphic class hierarchies, data encapsulation, and modular design patterns.</li>
+                  <li><strong>Transaction Processing:</strong> Automated bill generation with configurable tax tiers.</li>
+                  <li><strong>Disk Persistence:</strong> File stream I/O ensures reliable catalog and sales persistence across sessions.</li>
+                </ul>
+
+                <div class="pane-tags">
+                  <span class="tech-tag">C++</span>
+                  <span class="tech-tag">OOP Architecture</span>
+                  <span class="tech-tag">File I/O Persistence</span>
+                  <span class="tech-tag">Data Structures</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Page Navigation Buttons -->
+        <div class="page-pagination">
+          <a href="skills.html" class="btn btn-secondary">
+            <span>← Technical Skills</span>
+          </a>
+          <a href="experience.html" class="btn btn-primary">
+            <span>Next: Work Experience →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-logo">&lt;Awais.AI/&gt;</span>
+        <p>© 2026 Awais Arshad. AI Researcher & Data Scientist (NUCES-FAST Islamabad).</p>
+      </div>
+      <div class="footer-right">
+        <a href="#navbar" class="back-to-top" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

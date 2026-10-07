@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Skills | Awais Arshad - AI Researcher & Data Scientist</title>
+  <meta name="description" content="Technical proficiencies and tools of Awais Arshad, including PyTorch, TensorFlow, Scikit-learn, Agentic AI, Cloud (AWS/Azure), and Python." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="cyber-theme">
+  <!-- Interactive Particle Background -->
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Awais Arshad Home">
+        <span class="logo-bracket">&lt;</span><span class="logo-text">Awais</span><span class="logo-dot">.</span><span class="logo-accent">AI</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="about.html" class="nav-item">About</a>
+        <a href="research.html" class="nav-item">Research</a>
+        <a href="skills.html" class="nav-item active">Skills</a>
+        <a href="projects.html" class="nav-item">Projects</a>
+        <a href="experience.html" class="nav-item">Experience</a>
+        <a href="achievements.html" class="nav-item">Achievements</a>
+        <a href="education.html" class="nav-item">Education</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="Awais_Arshad_Reseach_Cv.pdf" class="btn btn-outline btn-sm" target="_blank" download="Awais_Arshad_Reseach_Cv.pdf">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Research CV</span>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> <span class="bc-sep">/</span> <span class="bc-current">Skills</span>
+        </div>
+        <span class="section-tag">// 03. ARSENAL</span>
+        <h1 class="page-title">Technical Skills & Stack</h1>
+        <div class="title-bar"></div>
+        <p class="page-subtitle">Interactive directory of tools, frameworks, and programming proficiencies.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Filter Controls -->
+        <div class="filter-wrapper">
+          <div class="filter-group" role="tablist" aria-label="Skills Filter">
+            <button class="filter-btn active" data-category="all" role="tab" aria-selected="true">All Skills</button>
+            <button class="filter-btn" data-category="ml-dl" role="tab" aria-selected="false">Deep Learning & ML</button>
+            <button class="filter-btn" data-category="agentic" role="tab" aria-selected="false">Agentic AI & Multimodal</button>
+            <button class="filter-btn" data-category="cloud-tools" role="tab" aria-selected="false">Cloud & Software Tools</button>
+            <button class="filter-btn" data-category="languages" role="tab" aria-selected="false">Languages & Web</button>
+          </div>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skills-container">
+          <!-- ML / Deep Learning -->
+          <div class="skill-card" data-category="ml-dl">
+            <div class="skill-icon-wrapper">
+              <span class="skill-glyph">🔥</span>
+            </div>
+            <div class="skill-info">
+              <h4 class="skill-name">PyTorch</h4>
+              <p class="skill-category">Deep Autoencoders, Federated Learning, NLP</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="ml-dl">
+            <div class="skill-icon-wrapper">
+              <span class="skill-glyph">🧠</span>
+            </div>
+            <div class="skill-info">
+              <h4 class="skill-name">TensorFlow</h4>
+              <p class="skill-category">ANN, CNN, RNN & Neural Modeling</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="ml-dl">
+            <div class="skill-icon-wrapper">
+              <span class="skill-glyph">🔬</span>
+            </div>
+            <div class="skill-info">
+              <h4 class="skill-name">Deep Learning & DIP</h4>
+              <p class="skill-category">Digital Image Processing, Vision Architectures</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 94%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="ml-dl">
+            <div class="skill-icon-wrapper">
+              <span class="skill-glyph">💬</span>
+            </div>
+            <div class="skill-info">
+              <h4 class="skill-name">Natural Language Processing</h4>
+              <p class="skill-category">Multilingual Detection, Distil-Whisper, Tokenization</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="ml-dl">
+            <div class="skill-icon-wrapper">
+              <span class="skill-glyph">⚙️</span>
+            </div>
+            <div class="skill-info">
+              <h4 class="skill-name">Scikit-learn & MLOps</h4>
+              <p class="skill-category">Pipelines, Tuning, Cross-Validation, Metrics</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+            </div>
+          </div>
+
+          <!-- Agentic AI & Multimodal -->
+          <div class="skill-card" data-category="agentic">
+            <div class="skill-icon-wrapper">
+              <span class="skill-glyph">🤖</span>
+            </div>
+            <div class="skill-info">
+              <h4 class="skill-name">Agentic AI Systems</h4>
+              <p class="skill-category">Multi-Agent Orchestration, Self-Debugging Loops</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 96%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="agentic">
+            <div class="skill-icon-wrapper">
+              <span class="skill-glyph">🦙</span>
+            </div>
+            <div class="skill-info">
+              <h4 class="skill-name">Llama 3 & Ollama</h4>
+              <p class="skill-category">Local & Cloud LLMs, Prompt Architecture</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="agentic">
+            <div class="skill-icon-wrapper">
+              <span class="skill-glyph">⚡</span>
+            </div>
+            <div class="skill-info">
+              <h4 class="skill-name">Groq API (Llama 3.3)</h4>
+              <p class="skill-category">Sub-second Inference for Real-Time Multimodal AI</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="agentic">
+            <div class="skill-icon-wrapper">
+              <span class="skill-glyph">👁️</span>
+            </div>
+            <div class="skill-info">
+              <h4 class="skill-name">MediaPipe</h4>
+              <p class="skill-category">Real-time Gaze, Pose, and Gesture Detection</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+            </div>
+          </div>
+
+          <!-- Cloud & Tools -->
+          <div class="skill-card" data-category="cloud-tools">
+            <div class="skill-icon-wrapper">
+              <span class="skill-glyph">☁️</span>
+            </div>
+            <div class="skill-info">
+              <h4 class="skill-name">AWS & Azure</h4>
+              <p class="skill-category">Cloud Compute, Storage, ML Deployment</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="cloud-tools">
+            <div class="skill-icon-wrapper">
+              <span class="skill-glyph">🐙</span>
+            </div>
+            <div class="skill-info">
+              <h4 class="skill-name">Git & GitHub</h4>
+              <p class="skill-category">Version Control, CI/CD Collaboration, Branching</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="cloud-tools">
+            <div class="skill-icon-wrapper">
+              <span class="skill-glyph">🐼</span>
+            </div>
+            <div class="skill-info">
+              <h4 class="skill-name">Pandas & NumPy</h4>
+              <p class="skill-category">EDA, Outlier Removal, Feature Engineering</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 96%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="cloud-tools">
+            <div class="skill-icon-wrapper">
+              <span class="skill-glyph">📊</span>
+            </div>
+            <div class="skill-info">
+              <h4 class="skill-name">Tableau & Seaborn</h4>
+              <p class="skill-category">Data Storytelling & Statistical Visualization</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+            </div>
+          </div>
+
+          <!-- Languages & Web -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-icon-wrapper">
+              <span class="skill-glyph">🐍</span>
+            </div>
+            <div class="skill-info">
+              <h4 class="skill-name">Python</h4>
+              <p class="skill-category">Primary Language for AI, ML, & Systems</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 96%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-icon-wrapper">
+              <span class="skill-glyph">💻</span>
+            </div>
+            <div class="skill-info">
+              <h4 class="skill-name">C / C++</h4>
+              <p class="skill-category">OOP, Algorithms, File Handling, Performance</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 86%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-icon-wrapper">
+              <span class="skill-glyph">🌐</span>
+            </div>
+            <div class="skill-info">
+              <h4 class="skill-name">JavaScript, React & HTML/CSS</h4>
+              <p class="skill-category">Frontend Dashboards, WebSockets & UI Components</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 84%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-icon-wrapper">
+              <span class="skill-glyph">🌶️</span>
+            </div>
+            <div class="skill-info">
+              <h4 class="skill-name">Flask & SQL</h4>
+              <p class="skill-category">Backend ML Serving, REST APIs, Databases</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Page Navigation Buttons -->
+        <div class="page-pagination">
+          <a href="research.html" class="btn btn-secondary">
+            <span>← Research Papers</span>
+          </a>
+          <a href="projects.html" class="btn btn-primary">
+            <span>Next: Featured Projects →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-logo">&lt;Awais.AI/&gt;</span>
+        <p>© 2026 Awais Arshad. AI Researcher & Data Scientist (NUCES-FAST Islamabad).</p>
+      </div>
+      <div class="footer-right">
+        <a href="#navbar" class="back-to-top" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
