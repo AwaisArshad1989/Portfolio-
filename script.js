@@ -254,7 +254,7 @@ function initTypingEffect() {
     'Federated Learning & NLP Researcher',
     'Agentic AI & Multi-Agent Architect',
     'Multimodal AI Specialist (FYP Lead)',
-    'NUCES-FAST Data Science Graduate'
+'FAST-NUCES Data Science Graduate'
   ];
 
   let roleIdx = 0;
